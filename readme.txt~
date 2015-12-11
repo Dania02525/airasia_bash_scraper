@@ -1,0 +1,26 @@
+
+Airfarechecker for Air Asia...
+
+###to run the shell- cd to the directory, then to the airasia folder... then type ./airfarechecker.sh #####
+
+This program has several modes:
+	Auto mode, where it extracts destination, origin city, and desired search date from the 	config file- airfarecheckerconfig.txt.  this is the mode you need if you would like to set 		the shell up to run automatically in cron(linux) or some other scheduler for Unix systems.
+	displays results in terminal- for now... will be setting up automatic emailing through smtp
+
+	Getaway mode- similar to auto mode, except that it checks your computer's date and searches 		the two weeks after todays date. displays results in terminal
+
+	Normal mode- prompts the user for all information.
+
+to set modes, open up airfarecheckerconfig.txt, and change the entry next to "mode:" to 'auto' 'getaway' or 'normal'
+
+to set dates, enter numerically in appropriate fields in airfarecheckerconfig.txt.  
+
+##notes
+
+for now, it only searches one way- but im adding round trip functionality to it.  
+
+for now, i dont have automatic emailing set up on it- mainly because Unix systems and most Bash implementations dont automatically have smtp set up on them.
+
+in the shell, it is heavily commented, so feel free to look it through and make suggestions, changes to suit your needs.  
+
+the script calls the website 'airasiaplus.com' so i was considering adding a function which simply popped up a firefox window, then closed it so that the owner of that site at least gets some ad revenue for the use of his server bandwidth... let me know what you think.  

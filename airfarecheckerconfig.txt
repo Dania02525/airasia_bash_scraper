@@ -1,0 +1,9 @@
+mode :normal
+day :12
+month :09
+year :2010
+origin :DPS
+destination :KUL
+email:n
+address:you@youraddress.com
+
